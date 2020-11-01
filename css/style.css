@@ -1,0 +1,252 @@
+/* Variables */
+
+:root {
+--basic-black: #000000;
+--basic-dark: #283136;
+--basic-white: #ffffff;
+--basic-gray: #666666;
+--basic-gray-light: #eeeeee;
+--basic-gray-dark: #444444;
+
+--special-gray: #a6a6a6;
+--special-dark-gray: #4D4D4D;
+--special-dark: #231f20;
+--special-red: #fb565a;
+--special-green: #00CA74;
+--special-yellow: #EFC849;
+}
+
+body {
+    width: 1157px;
+    font-family: "Roboto", "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--basic-dark);
+    background-color: var(--basic-white);
+}
+
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.main-header {
+    background-color: var(--basic-gray-light);
+}
+
+.main-navigation {
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.header-navigation {
+ list-style: none;
+}
+
+.header-navigation a, .main-navigation a {
+    color: var(--basic-black);
+}
+
+.slider {
+    background-color: var(--basic-gray-light);
+}
+
+.slider-title {
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 55px;
+    color: var(--basic-black);
+}
+
+.button {
+    color: var(--basic-white);
+    line-height: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+.slider .button {
+    background-color: var(--special-red);
+}
+
+.slider-pagination {
+    text-decoration: none;
+    list-style: none;
+}
+
+.services-list {
+    list-style: none;
+}
+
+.services-list-item h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.services-list-item:nth-child(1) .button {
+    background-color: var(--special-red);
+}
+
+.services-list-item:nth-child(2) .button {
+    background-color: var(--special-green);
+}
+
+.services-list-item:nth-child(3) .button {
+    background-color: var(--special-yellow);
+}
+
+.about-title {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500;
+    color: var(--basic-black);
+}
+
+.about-subtitle, .advantages-title {
+    font-weight: 700;
+}
+
+.about-list {
+    list-style: none;
+}
+
+.advantages-title {
+    color: var(--basic-black);
+}
+
+.adventages-list {
+   list-style: none;
+}
+
+.adventages-list-title {
+    font-size: 45px;
+    line-height: 64px;
+    font-weight: 700;
+    color: var (--basic-black);
+}
+
+.adventages-list-title span:last-of-type {
+    font-size: 26px;
+    line-height: 40px;
+    font-weight: inherit;
+}
+
+.adventages-list-description {
+    line-height: 18px
+}
+
+.clients-list {
+    list-style: none;
+}
+
+.main-footer-map h3 {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    color: var(--basic-black);
+}
+
+.main-footer-adress {
+    line-height: 18px;
+    color: var(--basic-gray);
+}
+
+.main-footer-telephone {
+   color: var(--basic-gray); 
+}
+
+.main-footer-telephone a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-footer-social-list {
+    list-style: none;
+}
+
+.main-footer-discount-title {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    color: var(--basic-black);
+}
+
+.main-footer-discount-description {
+    color: var(--basic-gray-dark);
+}
+
+.main-footer-map .button, 
+.layout-list-item .button  {
+ background-color: var(--special-red);
+    border: none;
+}
+
+.layout-sorting-title {
+    line-height: 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--basic-black);
+}
+
+.layout-sorting {
+    list-style: none;
+}
+
+.layout-sorting-item a {
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+}
+
+.active a{
+    color: var(--basic-black);
+}
+
+.not-active a{
+    color: var(--basic-gray-light);
+}
+
+.layout-sorting-item a:hover,
+.layout-sorting-item a:focus,
+.layout-sorting-item a:active {
+    color: var(--basic-black);
+}
+
+.layout-sorting-ascending {
+    list-style: none;
+}
+
+.layout-sorting-ascending-item a:hover,
+.layout-sorting-ascending-item a:focus,
+.layout-sorting-ascending-item a:active {
+    color: var(--basic-black);
+}
+
+.layout-list {
+    list-style: none;
+}
+
+.layout-list-item-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--basic-black);
+}
+
+.pagination {
+    list-style: none; 
+}
+
+.pagination-item a{
+    text-decoration: none;
+    color: var(--basic-black);
+}

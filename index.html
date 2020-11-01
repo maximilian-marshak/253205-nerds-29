@@ -1,133 +1,147 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" class="page">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
-      <header>
-          <nav>
-              <a href="">
+  <body class="page-body">
+      <header class="main-header">
+          <nav class="main-navigation">
+              <a href="" class="main-header-logo">
                   <img src="https://via.placeholder.com/150x100" alt="Логотип дизайн-студии Нёрдс">
               </a>
-              <ul>
-                  <li><a href="">СТУДИЯ</a></li>
-                  <li><a href="">КЛИЕНТЫ</a></li>
-                  <li><a href="/catalog.html">МАГАЗИН</a></li>
-                  <li><a href="">КОНТАКТЫ</a></li>
+              <ul class="header-navigation">
+                  <li class="header-navigation-item"><a href="">СТУДИЯ</a></li>
+                  <li class="header-navigation-item"><a href="">КЛИЕНТЫ</a></li>
+                  <li class="header-navigation-item"><a href="/catalog.html">МАГАЗИН</a></li>
+                  <li class="header-navigation-item"><a href="">КОНТАКТЫ</a></li>
               </ul>
-              <a href="">Корзина</a>
+              <a href="" class="main-header-basket">Корзина</a>
           </nav>
       </header>
-      <main>
+      <main class="container">
           <h1>Дизайн-студия Нёрдс</h1>
-          <section> 
-              <p>Долго, дорого, скрупулезно</p>
+          <section class="slider"> 
+              <p class="slider-title">Долго, дорого, скрупулезно</p>
               <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-              <a href="">Узнать больше</a>
+              <a href="" class="button">Узнать больше</a>
               <img src="https://via.placeholder.com/150x100" alt="">
-              <ul>
-                  <li>
+              <ul class="slider-pagination">
+                  <li class="slider-pagination-item">
                       <a>1</a>
                   </li>
-                  <li>
+                  <li class="slider-pagination-item">
                       <a href="#">2</a>
                   </li>
-                  <li>
+                  <li class="slider-pagination-item">
                       <a href="#">3</a>
                   </li>
               </ul>
           </section>
-          <section>
+          <section class="services">
               <h2>Услуги</h2>
-              <ul>
-                  <li>
+              <ul class="services-list">
+                  <li class="services-list-item">
                       <h3>ВЕБ-САЙТЫ</h3>
                       <p>
                           Мир никогда не будет прежним после того как увидит ваш сайт!
                       </p>
-                      <a href="#">Заказать</a>
+                      <a href="#" class="button">Заказать</a>
                   </li>
-                  <li>
+                  <li class="services-list-item">
                       <h3>ПРИЛОЖЕНИЯ</h3>
                       <p>
                           Покорите топ-10 приложений в AppStore и Google Play
                       </p>
-                      <a href="#">Заказать</a>
+                      <a href="#" class="button">Заказать</a>
                   </li>
-                  <li>
+                  <li class="services-list-item">
                       <h3>ПРЕЗЕНТАЦИИ</h3>
                       <p>
                           Вы двже не подозреваете, насколько вы изумительные!
                       </p>
-                      <a href="#">Заказать</a>
+                      <a href="#" class="button">Заказать</a>
                   </li>
               </ul>
           </section>
-          <section>
+          <section class="about">
               <h2>О нас</h2>
-              <p>Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-              <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-              <p>ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</p>
-              <ul>
-                  <li>Веб-сайтов любой сложности</li>
-                  <li>Мобильных приложений для IOS и Android</li>
-                  <li>Слайдшоу и видео для корпоративных презентаций</li>
+              <p class="about-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+              <p class="about-description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+              <p class="about-subtitle">ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</p>
+              <ul class="about-list">
+                  <li class="about-list-item">Веб-сайтов любой сложности</li>
+                  <li class="about-list-item">Мобильных приложений для IOS и Android</li>
+                  <li class="about-list-item">Слайдшоу и видео для корпоративных презентаций</li>
               </ul>
           </section>
-          <section>
+          <section class="advantages">
               <h2>Преимущества</h2>
-              <p>С 2004 ГОДА ЛЮБИМ  ТОЧНОСТЬ ВО ВСЕМ:</p>
-              <ul>
-                  <li>
-                      <p>146%</p>
-                      <p>Уровень самоотдачи</p>
+              <p class="advantages-title">С 2004 ГОДА ЛЮБИМ  ТОЧНОСТЬ ВО ВСЕМ:</p>
+              <ul class="adventages-list">
+                  <li class="adventages-list-item">
+                      <p class="adventages-list-title">
+                          <span>146</span>
+                          <span>%</span>
+                      </p>
+                      <p class="adventages-list-description">Уровень самоотдачи</p>
                   </li>
-                  <li>
-                      <p>100%</p>
-                      <p>Соблюдение сроков</p>
+                  <li class="adventages-list-item">
+                      <p class="adventages-list-title">
+                          <span>100</span>
+                          <span>%</span>
+                      </p>
+                      <p class="adventages-list-description">Соблюдение сроков</p>
                   </li>
-                  <li>
-                      <p>50%</p>
-                      <p>Минимальная предоплата</p>
+                  <li class="adventages-list-item">
+                      <p class="adventages-list-title">
+                          <span>50</span>
+                          <span>%</span>
+                      </p>
+                      <p class="adventages-list-description">Минимальная предоплата</p>
                   </li>
               </ul>
           </section>
-          <section>
+          <section class="clients">
               <h2>Наши клиенты</h2>
-              <ul>
+              <ul class="clients-list">
+                  <li class="clients-list-item">
                   <a href="#">
                       <img src="https://via.placeholder.com/150x100" alt="">
                   </a>
-              </ul>
-               <ul>
-                  <a href="#">
+                </li>
+                   <li class="clients-list-item">
+                      <a href="#">
+                          <img src="https://via.placeholder.com/150x100" alt="">
+                      </a>
+                  </li>
+                   <li class="clients-list-item">
+                    <a href="#">
                       <img src="https://via.placeholder.com/150x100" alt="">
-                  </a>
-              </ul>
-               <ul>
-                <a href="#">
-                  <img src="https://via.placeholder.com/150x100" alt="">
-                </a>
-              </ul>
-               <ul>
-                 <a href="#">
-                  <img src="https://via.placeholder.com/150x100" alt="">
-                </a>
+                    </a>
+                  </li>
+                   <li class="clients-list-item">
+                     <a href="#">
+                      <img src="https://via.placeholder.com/150x100" alt="">
+                    </a>
+                  </li>
               </ul>
           </section>
       </main>
-      <footer>
-          <section>
+      <footer class="main-footer">
+          <section class="main-footer-map">
               <h2>Адрес компании</h2>
               <h3>NЁRDS DESIGN STUDIO</h3>
-              <p>191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8</p>
-              <p>тел.<a href="tel:+7(812)2757575">+7(812)275-75-75</a></p>
-              <button type="button">Напишите нам</button>
+              <p class="main-footer-adress">191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8</p>
+              <p class="main-footer-telephone">тел.<a href="tel:+7(812)2757575">+7(812)275-75-75</a></p>
+              <button type="button" class="button">Напишите нам</button>
           </section>
-          <section>
+          <section class="main-footer-social">
               <h2>Социальные сети</h2>
-              <ul>
+              <ul class="main-footer-social-list">
                   <li>
                       <a href="#">
                           <img src="https://via.placeholder.com/150x100" alt="">
@@ -145,12 +159,12 @@
                   </li>
               </ul>
           </section>
-          <section>
-              <p>Давайте дружить, это выгодно!</p>
-              <p>Скидка 10% для друзкй из социальных сетей</p>
+          <section class="main-footer-discount">
+              <p class="main-footer-discount-title">Давайте дружить, это выгодно!</p>
+              <p class="main-footer-discount-description">Скидка 10% для друзкй из социальных сетей</p>
           </section>
       </footer>
-      <section>
+      <section class="modal">
           <h2>Напишите нам</h2>
           <button type="button">Закрыть</button>
       </section>
