@@ -2,6 +2,8 @@
 
 :root {
 --basic-black: #000000;
+--basic-black-opacity: rgba(0, 0, 0, 0.3);
+    
 --basic-dark: #283136;
 --basic-white: #ffffff;
 --basic-gray: #666666;
@@ -11,9 +13,21 @@
 --special-gray: #a6a6a6;
 --special-dark-gray: #4D4D4D;
 --special-dark: #231f20;
+--special-white: rgba(255, 255, 255, 0.3);
+
+--special-black-opacity: rgba(0, 0, 0, 0.6);
+    
 --special-red: #fb565a;
+--special-red-hover: #E74246;
+--special-red-active: #D7373B;
+
 --special-green: #00CA74;
+--special-green-hover: #00BC6C;
+--special-green-active: #00AA62;
+    
 --special-yellow: #EFC849;
+--special-yellow-hover: #EAB534;
+--special-yellow-active: #E5A722;
 }
 
 body {
@@ -45,12 +59,25 @@ img {
     line-height: 30px;
 }
 
-.header-navigation {
+.header-navigation, 
+.slider-list {
  list-style: none;
 }
 
-.header-navigation a, .main-navigation a {
+.header-navigation a,
+.main-navigation a
+{
     color: var(--basic-black);
+}
+
+.header-navigation a:hover,
+.main-navigation a:hover {
+    color: var(--special-red);
+}
+
+.header-navigation a:active,
+.main-navigation a:active {
+    color: var(--basic-black-opacity);
 }
 
 .slider {
@@ -72,9 +99,26 @@ img {
     border-radius: 3px;
 }
 
-.slider .button {
+.slider .button,
+.services-list-item:nth-child(1) .button,
+.main-footer-map .button, 
+.layout-list-item .button {
     background-color: var(--special-red);
 }
+
+.slider .button:hover,
+.services-list-item:nth-child(1) .button:hover,
+.main-footer-map .button:hover, 
+.layout-list-item .button:hover {
+    background-color: var(--special-red-hover);
+}
+
+.slider .button:active,
+.services-list-item:nth-child(1) .button:active
+{
+    background-color: var(--special-red-active);
+    color: var(--special-white);
+} 
 
 .slider-pagination {
     text-decoration: none;
@@ -91,16 +135,31 @@ img {
     line-height: 30px;
 }
 
-.services-list-item:nth-child(1) .button {
-    background-color: var(--special-red);
-}
 
 .services-list-item:nth-child(2) .button {
     background-color: var(--special-green);
 }
 
+.services-list-item:nth-child(2) .button:hover {
+    background-color: var(--special-green-hover);
+}
+
+.services-list-item:nth-child(2) .button:active {
+    background-color: var(--special-green-active);
+    color: var(--special-white);
+}
+
 .services-list-item:nth-child(3) .button {
     background-color: var(--special-yellow);
+}
+
+.services-list-item:nth-child(3) .button:hover {
+    background-color: var(--special-yellow-hover);
+}
+
+.services-list-item:nth-child(3) .button:active {
+    background-color: var(--special-yellow-active);
+    color: var(--special-white);
 }
 
 .about-title {
@@ -110,7 +169,8 @@ img {
     color: var(--basic-black);
 }
 
-.about-subtitle, .advantages-title {
+.about-subtitle, 
+.advantages-title {
     font-weight: 700;
 }
 
@@ -185,8 +245,14 @@ img {
 
 .main-footer-map .button, 
 .layout-list-item .button  {
- background-color: var(--special-red);
     border: none;
+}
+
+.main-footer-map .button:active,
+.layout-list-item .button:active {
+    background-color: var(--special-red-active);
+    color: var(--basic-white);
+    border: 0;
 }
 
 .layout-sorting-title {
@@ -205,30 +271,31 @@ img {
     font-size: 14px;
     line-height: 18px;
     text-decoration: none;
+    color: var(--basic-gray-light);
+}
+
+.layout-sorting-item a,
+.layout-sorting-ascending-item a {
+    color: var(--basic-black-opacity);
+}
+
+.layout-sorting-item a:hover,
+.layout-sorting-ascending-item a:hover {
+    color: var(--special-black-opacity);
+}
+
+.layout-sorting-item a:active,
+.layout-sorting-ascending-item a:active {
+    color: var(--basic-black);
 }
 
 .active a{
     color: var(--basic-black);
 }
 
-.not-active a{
-    color: var(--basic-gray-light);
-}
-
-.layout-sorting-item a:hover,
-.layout-sorting-item a:focus,
-.layout-sorting-item a:active {
-    color: var(--basic-black);
-}
 
 .layout-sorting-ascending {
     list-style: none;
-}
-
-.layout-sorting-ascending-item a:hover,
-.layout-sorting-ascending-item a:focus,
-.layout-sorting-ascending-item a:active {
-    color: var(--basic-black);
 }
 
 .layout-list {
@@ -240,6 +307,14 @@ img {
     font-size: 18px;
     line-height: 30px;
     color: var(--basic-black);
+}
+
+.layout-list-item-title a:hover {
+    color: var(--special-red);
+}
+
+.layout-list-item-title a:active {
+    color: var(--basic-black-opacity);
 }
 
 .pagination {
