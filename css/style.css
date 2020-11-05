@@ -30,8 +30,19 @@
 --special-yellow-active: #E5A722;
 }
 
+.page{
+    height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
 body {
-    width: 1157px;
+    min-width: 1157px;
     font-family: "Roboto", "Open Sans", sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -55,8 +66,18 @@ img {
 }
 
 .main-navigation {
+    display: grid;
+    grid-template-columns: 160px 1fr min-content;
+    width: 1157px;
     font-weight: 500;
     line-height: 30px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.header-navigation {
+    padding: 0;
+    justify-self: center;
 }
 
 .header-navigation, 
@@ -80,14 +101,25 @@ img {
     color: var(--basic-black-opacity);
 }
 
-.slider {
+.container {
+    width:1157px;
+    margin: 0 auto;
+}
+
+.slider-wrapper {
     background-color: var(--basic-gray-light);
+}
+
+.slider-list {
+    padding: 0;
+    margin: 0;
 }
 
 .slider-title {
     font-weight: 500;
     font-size: 55px;
     line-height: 55px;
+    margin: 0;
     color: var(--basic-black);
 }
 
@@ -100,16 +132,16 @@ img {
 }
 
 .slider .button,
-.services-list-item:nth-child(1) .button,
 .main-footer-map .button, 
-.layout-list-item .button {
+.layout-list-item .button,
+.services-list-item:nth-child(1) .button {
     background-color: var(--special-red);
 }
 
 .slider .button:hover,
-.services-list-item:nth-child(1) .button:hover,
 .main-footer-map .button:hover, 
-.layout-list-item .button:hover {
+.layout-list-item .button:hover,
+.services-list-item:nth-child(1) .button:hover {
     background-color: var(--special-red-hover);
 }
 
@@ -123,10 +155,21 @@ img {
 .slider-pagination {
     text-decoration: none;
     list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.services{
+    margin-bottom: 80px;
 }
 
 .services-list {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    column-gap: 100px;
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .services-list-item h3 {
@@ -162,6 +205,12 @@ img {
     color: var(--special-white);
 }
 
+.index-column {
+    display: grid;
+    grid-template-columns: 655px 360px;
+    column-gap: 149px;
+}
+
 .about-title {
     font-size: 45px;
     line-height: 45px;
@@ -183,7 +232,11 @@ img {
 }
 
 .adventages-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .adventages-list-title {
@@ -191,6 +244,7 @@ img {
     line-height: 64px;
     font-weight: 700;
     color: var (--basic-black);
+    margin: 0;
 }
 
 .adventages-list-title span:last-of-type {
@@ -205,6 +259,8 @@ img {
 
 .clients-list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .main-footer-map h3 {
@@ -228,11 +284,20 @@ img {
     color: inherit;
 }
 
+.footer-column {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    column-gap: 80px
+}
+
 .main-footer-social-list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .main-footer-discount-title {
+    margin: 0;
     font-size: 36px;
     line-height: 36px;
     font-weight: 700;
@@ -253,6 +318,47 @@ img {
     background-color: var(--special-red-active);
     color: var(--basic-white);
     border: 0;
+}
+
+.catalog-wrapper {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    column-gap: 140px;
+}
+
+.title-wrapper {
+    text-align: center;
+    background-color: var(--basic-gray-light);
+}
+
+.title-wrapper h1 {
+    margin: 0;
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 55px;
+}
+legend {
+   text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--basic-black);
+}
+
+label {
+    line-height: 19px;
+}
+
+.filter-list-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sorting-column {
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    column-gap: 40px;
 }
 
 .layout-sorting-title {
@@ -298,8 +404,16 @@ img {
     list-style: none;
 }
 
+.items-column {
+    display: grid;
+    grid-template-columns: 360px 360px;
+    column-gap: 40px;
+}
+
 .layout-list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .layout-list-item-title {
