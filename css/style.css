@@ -61,6 +61,9 @@ img {
   height: auto;
 }
 
+
+/* header */
+
 .main-header {
     background-color: var(--basic-gray-light);
 }
@@ -75,7 +78,14 @@ img {
     padding: 0;
 }
 
+.main-header-logo {
+    margin-top: auto;
+}
+
 .header-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 75px 0 9px 0;
     padding: 0;
     justify-self: center;
 }
@@ -83,6 +93,14 @@ img {
 .header-navigation, 
 .slider-list {
  list-style: none;
+}
+
+.header-navigation-item {
+    margin-right: 45px;
+}
+
+.header-navigation-item:last-child {
+    margin: 0;
 }
 
 .header-navigation a,
@@ -101,6 +119,13 @@ img {
     color: var(--basic-black-opacity);
 }
 
+.main-header-basket {
+    margin: 75px 0 9px 0;
+    text-transform: uppercase;
+}
+
+/*main*/
+
 .container {
     width:1157px;
     margin: 0 auto;
@@ -113,6 +138,10 @@ img {
 .slider-list {
     padding: 0;
     margin: 0;
+}
+
+.slider-item-wrapper {
+    display: flex;
 }
 
 .slider-title {
@@ -153,8 +182,9 @@ img {
 } 
 
 .slider-pagination {
-    text-decoration: none;
+    display: flex;
     list-style: none;
+    text-decoration: none;
     padding: 0;
     margin: 0;
 }
@@ -258,10 +288,14 @@ img {
 }
 
 .clients-list {
+    display: flex;
+    justify-content: space-around;
     list-style: none;
     padding: 0;
     margin: 0;
 }
+
+/*footer*/
 
 .main-footer-map h3 {
     font-size: 18px;
@@ -291,6 +325,7 @@ img {
 }
 
 .main-footer-social-list {
+    display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -319,6 +354,9 @@ img {
     color: var(--basic-white);
     border: 0;
 }
+
+
+/*catalog*/
 
 .catalog-wrapper {
     display: grid;
@@ -349,10 +387,24 @@ label {
     line-height: 19px;
 }
 
+.filter-form-section {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
 .filter-list-items {
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+.filter-option {
+    margin-bottom: 15px;
+}
+
+.filter-option:last-child {
+    margin-bottom: 0;
 }
 
 .sorting-column {
@@ -362,6 +414,8 @@ label {
 }
 
 .layout-sorting-title {
+    margin: 0;
+    padding: 0;
     line-height: 30px;
     font-size: 18px;
     text-transform: uppercase;
@@ -369,8 +423,24 @@ label {
     color: var(--basic-black);
 }
 
+.sotring-wrapper {
+    display: flex;
+}
+
 .layout-sorting {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
     list-style: none;
+}
+
+.layout-sorting-item {
+    margin-right: 25px;
+}
+
+.layout-sorting-item:nth-child(3n) {
+    margin: 0;
 }
 
 .layout-sorting-item a {
@@ -401,6 +471,9 @@ label {
 
 
 .layout-sorting-ascending {
+    display: flex;
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 
@@ -432,6 +505,9 @@ label {
 }
 
 .pagination {
+    display: flex;
+    padding: 0;
+    margin: 0;
     list-style: none; 
 }
 
