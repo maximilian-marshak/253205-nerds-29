@@ -136,37 +136,108 @@
                           </ul>
                           <ul class="layout-sorting-ascending">
                               <li class="layout-sorting-ascending-item active">
-                                  <a>Вверх</a>
+                                  <a>
+                                      <img src="img/icon-up-dir.svg" alt="Сортировка по убыванию" width="11px" height="10px">
+                                  </a>
                               </li>
                               <li class="layout-sorting-ascending-item">
-                                  <a href="#">Вниз</a>
+                                  <a href="#">
+                                      <img src="img/icon-down-dir.svg" alt="Сортировка по убыванию" width="11px" height="10px">
+                                  </a>
                               </li>
                           </ul>
                       </div>
                   </div>
                   <ul class="layout-list items-column">
                       <li class="layout-list-item">
+                          <div class="list-item-header">
+                              <div class="browser-circle"></div>
+                              <div class="browser-circle"></div>
+                              <div class="browser-circle"></div>
+                          </div>
                           <img src="img/img-sedona.jpg" width="359" height="578" alt="Макет Sedona">
-                          <h3 class="layout-list-item-title">
-                              <a>SEDONA</a>
-                          </h3>
-                          <p class="layout-list-item-description">Информационный сайт для туристов</p>
-                          <button type="button" class="button">9900 ₽</button>
+                          <div class="layout-list-wrapper">
+                              <h3 class="layout-list-item-title">
+                                  <a>SEDONA</a>
+                              </h3>
+                              <p class="layout-list-item-description">Информационный сайт<br> для туристов</p>
+                              <button type="button" class="button button-catalog-item">9900 ₽</button>
+                          </div>
                       </li>
                       <li class="layout-list-item">
+                          <div class="list-item-header">
+                              <div class="browser-circle"></div>
+                              <div class="browser-circle"></div>
+                              <div class="browser-circle"></div>
+                          </div>
                           <img src="img/img-pink.jpg" width="359" height="578" alt="Макет Pink">
+                          <div class="layout-list-wrapper">
+                              <h3 class="layout-list-item-title">
+                                  <a>Pink App</a>
+                              </h3>
+                              <p class="layout-list-item-description">Продуктовый лендинг<br> приложения для iOS и Android</p>
+                              <button type="button" class="button button-catalog-item">9900 ₽</button>
+                          </div>
                       </li>
                       <li class="layout-list-item">
+                          <div class="list-item-header">
+                              <div class="browser-circle"></div>
+                              <div class="browser-circle"></div>
+                              <div class="browser-circle"></div>
+                          </div>
                           <img src="img/img-barbershop.jpg" width="359" height="578" alt="Макет Barbershop Borodinsky">
+                          <div class="layout-list-wrapper">
+                              <h3 class="layout-list-item-title">
+                                  <a>Barbershop</a>
+                              </h3>
+                              <p class="layout-list-item-description">Сайт салона красоты.<br> Для мужчин, да.</p>
+                              <button type="button" class="button button-catalog-item">9900 ₽</button>
+                          </div>
                       </li>
                       <li class="layout-list-item">
+                          <div class="list-item-header">
+                              <div class="browser-circle"></div>
+                              <div class="browser-circle"></div>
+                              <div class="browser-circle"></div>
+                          </div>
                           <img src="img/img-mishka.jpg" width="359" height="578" alt="Макет Mishka">
+                          <div class="layout-list-wrapper">
+                              <h3 class="layout-list-item-title">
+                                  <a> MISHKA</a>
+                              </h3>
+                              <p class="layout-list-item-description">Интернет-магазин<br> вязаных игрушек</p>
+                              <button type="button" class="button button-catalog-item">9900 ₽</button>
+                          </div>
                       </li>
                       <li class="layout-list-item">
+                          <div class="list-item-header">
+                              <div class="browser-circle"></div>
+                              <div class="browser-circle"></div>
+                              <div class="browser-circle"></div>
+                          </div>
                           <img src="img/img-aplus.jpg" width="359" height="578" alt="Макет Aplus">
+                          <div class="layout-list-wrapper">
+                              <h3 class="layout-list-item-title">
+                                  <a>A Plus</a>
+                              </h3>
+                              <p class="layout-list-item-description">Лендинг курсов повышения<br> квалификации</p>
+                              <button type="button" class="button button-catalog-item">9900 ₽</button>
+                          </div>
                       </li>
                       <li class="layout-list-item">
+                          <div class="list-item-header">
+                              <div class="browser-circle"></div>
+                              <div class="browser-circle"></div>
+                              <div class="browser-circle"></div>
+                          </div>
                           <img src="img/img-kvast.jpg" width="359" height="578" alt="Макет Kvast">
+                          <div class="layout-list-wrapper">
+                              <h3 class="layout-list-item-title">
+                                  <a>КВАСТ</a>
+                              </h3>
+                              <p class="layout-list-item-description">Промо-сайт производителя<br> крафтового кваса</p>
+                              <button type="button" class="button button-catalog-item">9900 ₽</button>
+                          </div>
                       </li>
                   </ul>
                   <ul class="pagination">
@@ -230,9 +301,33 @@
               </div>
           </div>
       </footer>
-      <section class="modal">
-          <h2>Напишите нам</h2>
-          <button type="button">Закрыть</button>
+      <section class="modal modal-display">
+          <div class="modal-wrapper">
+              <h2 class="visually-hidden">Форма обратной связи</h2>
+              <button type="button" class="close-button"><img src="img/close-cross.svg" alt="Кнопка закрытия поп-ап окна" width="21px" height="21px"></button>
+              <form class="pop-up" method="get" action="https://echo.htmlacademy.ru">
+                  <fieldset>
+                      <legend class="pop-up-title">
+                          Напишите нам
+                      </legend>
+                      <ul class="pop-up-list" for="text-name">
+                          <li class="pop-up-item">
+                              <label class="pop-up-item-title">Ваше имя:</label>
+                              <input type="text" class="pop-up-input" placeholder="Имя Фамилия" name="name" id="text-name">
+                          </li>
+                          <li class="pop-up-item" for="text-email">
+                              <label class="pop-up-item-title">Ваш email:</label>
+                              <input type="email" class="pop-up-input" placeholder="email@example.com" name="email" id="text-email">
+                          </li>
+                          <li class="pop-up-item">
+                              <p class="pop-up-item-title">Текст письма:</p>
+                              <textarea class="pop-up-textarea">В свободной форме</textarea>
+                          </li>
+                      </ul>
+                  </fieldset>
+                   <button type="submit" class="button button-pop-up">Отправить</button>
+              </form>
+          </div>
       </section>
   </body>
 </html>  

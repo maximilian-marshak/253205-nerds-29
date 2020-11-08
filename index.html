@@ -214,9 +214,33 @@
               </div>
           </div>
       </footer>
-      <section class="modal">
-          <h2>Напишите нам</h2>
-          <button type="button">Закрыть</button>
+      <section class="modal modal-display">
+          <div class="modal-wrapper">
+              <h2 class="visually-hidden">Форма обратной связи</h2>
+              <button type="button" class="close-button"><img src="img/close-cross.svg" alt="Кнопка закрытия поп-ап окна" width="21px" height="21px"></button>
+              <form class="pop-up" method="get" action="https://echo.htmlacademy.ru">
+                  <fieldset>
+                      <legend class="pop-up-title">
+                          Напишите нам
+                      </legend>
+                      <ul class="pop-up-list" for="text-name">
+                          <li class="pop-up-item">
+                              <label class="pop-up-item-title">Ваше имя:</label>
+                              <input type="text" class="pop-up-input" placeholder="Имя Фамилия" name="name" id="text-name">
+                          </li>
+                          <li class="pop-up-item" for="text-email">
+                              <label class="pop-up-item-title">Ваш email:</label>
+                              <input type="email" class="pop-up-input" placeholder="email@example.com" name="email" id="text-email">
+                          </li>
+                          <li class="pop-up-item">
+                              <p class="pop-up-item-title">Текст письма:</p>
+                              <textarea class="pop-up-textarea">В свободной форме</textarea>
+                          </li>
+                      </ul>
+                  </fieldset>
+                   <button type="submit" class="button button-pop-up">Отправить</button>
+              </form>
+          </div>
       </section>
   </body>
 </html>
