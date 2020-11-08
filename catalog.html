@@ -27,9 +27,11 @@
                       <a href="">КОНТАКТЫ</a>
                   </li>
               </ul>
-              <a href="" class="main-header-basket">
-                  Корзина
-              </a>
+              <div class="user-navigation">
+                  <a href="" class="main-header-basket">
+                      Корзина
+                  </a>
+              </div>
           </nav>
       </header>
       <main>
@@ -46,16 +48,24 @@
                           <legend>
                               Стоимость:
                           </legend>
-                          <ul class="filter-list-items">
-                              <li>
-                                  <label for="min-value">От</label>
-                                  <input class="filter-input" type="text" name="min-value" id="min-value">
-                              </li>
-                              <li>
-                                  <label for="max-value">До</label>
-                                  <input class="filter-input" type="text" name="max-value" id="max-value">
-                              </li>
-                          </ul>
+                          <div class="range-filter">
+                              <div class="range-controls">
+                                  <div class="scale">
+                                      <div class="bar"></div>
+                                  </div>
+                                  <div class="toggle toggle-min" tabindex="0"></div>
+                                  <div class="toggle toggle-max" tabindex="0"></div>
+                              </div>
+                              <div class="price-controls">
+                                  <label class="min-price">
+                                      от
+                                      <input type="number" name="min-price" value="0">
+                                  </label>
+                                  <label class="max-price">
+                                      до <input type="number" name="max-price" value="15000">
+                                  </label>
+                              </div>
+                          </div>
                       </fieldset> 
                       <fieldset class="filter-form-section">
                           <legend>
@@ -63,15 +73,15 @@
                           </legend>
                           <ul class="filter-list-items">
                               <li class="filter-option filter-radio">
-                                <input class="filter-input-radio" type="radio" name="Adaptive" value="adaptive" id="Adaptive">
+                                <input class="filter-input-radio visually-hidden" type="radio" name="Adaptive" value="adaptive" id="Adaptive">
                                 <label for="Adaptive">Адаптивная</label>         
                               </li>
                               <li class="filter-option filter-radio">
-                                <input class="filter-input-radio" type="radio" name="Fixed" value="fixed" id="Fixed">
+                                <input class="filter-input-radio visually-hidden" type="radio" name="Fixed" value="fixed" id="Fixed">
                                 <label for="Fixed">Фиксированная</label>         
                               </li>
                               <li class="filter-option filter-radio">
-                                <input class="filter-input-radio" type="radio" name="rubber" value="rubber" id="rubber">
+                                <input class="filter-input-radio visually-hidden" type="radio" name="rubber" value="rubber" id="rubber">
                                 <label for="rubber">Резиновая</label>         
                               </li>
                           </ul>
@@ -82,27 +92,28 @@
                           </legend>
                           <ul class="filter-list-items">
                               <li class="filter-option filter-checkbox">
-                                  <input class="filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
+                                  <input class="filter-input-checkbox visually-hidden" type="checkbox" name="slider" id="filter-slider" checked>
                                   <label for="filter-slider">Слайдер</label>
                               </li>
                               <li class="filter-option filter-checkbox">
-                                  <input class="filter-input-checkbox" type="checkbox" name="Advantages block" id="filter-advantages-block">
+                                  <input class="filter-input-checkbox visually-hidden" type="checkbox" name="Advantages block" id="filter-advantages-block">
                                   <label for="filter-advantages-block">Блок преимуществ</label>
                               </li>
                               <li class="filter-option filter-checkbox">
-                                  <input class="filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
+                                  <input class="filter-input-checkbox visually-hidden" type="checkbox" name="news" id="filter-news" checked>
                                   <label for="filter-news">Новости</label>
                               </li>
                               <li class="filter-option filter-checkbox">
-                                  <input class="filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+                                  <input class="filter-input-checkbox visually-hidden" type="checkbox" name="gallery" id="filter-gallery">
                                   <label for="filter-gallery">Галерея</label>
                               </li>
                               <li class="filter-option filter-checkbox">
-                                  <input class="filter-input-checkbox" type="checkbox" name="basket" id="filter-basket">
+                                  <input class="filter-input-checkbox visually-hidden" type="checkbox" name="basket" id="filter-basket">
                                   <label for="filter-basket">Корзина</label>
                               </li>
                           </ul>
                       </fieldset>
+                      <button type="submit" class="filter-button button">Показать</button>
                   </form>
               </section>
               <section class="layout">
@@ -159,7 +170,7 @@
                       </li>
                   </ul>
                   <ul class="pagination">
-                      <li class="pagination-item">
+                      <li class="pagination-item pagination-active">
                           <a>1</a>
                       </li>
                       <li class="pagination-item">
@@ -168,7 +179,7 @@
                       <li class="pagination-item">
                           <a href="#">3</a>
                       </li>
-                      <li class="pagination-item">
+                      <li class="pagination-item pagination-item-last">
                           <a href="#">Следующая</a>
                       </li>
                   </ul>
@@ -176,32 +187,36 @@
           </div>
       </main>
       <footer class="main-footer">
-          <div class="container">
               <section class="main-footer-map">
-                  <h2 class="visually-hidden">Адрес компании</h2>
-                  <h3>NЁRDS DESIGN STUDIO</h3>
-                  <p class="main-footer-adress">191186, Санкт-Петербург, ул. Б.Конюшенная, д.19/8</p>
-                  <p class="main-footer-telephone">тел.<a href="tel:+7(812)2757575">+7(812)275-75-75</a></p>
-                  <button type="button" class="button">Напишите нам</button>
+                  <div class="container">
+                      <div class="map-description">
+                          <h2 class="visually-hidden">Адрес компании</h2>
+                          <h3>NЁRDS DESIGN STUDIO</h3>
+                          <p class="main-footer-adress">191186, Санкт-Петербург,<br> ул. Б.Конюшенная, д.19/8</p>
+                          <p class="main-footer-telephone">тел. <a href="tel:+7(812)2757575">+7(812)275-75-75</a></p>
+                          <button type="button" class="button button-map">Напишите нам</button>
+                      </div>
+                    </div>
               </section>
+          <div class="container">
               <div class="footer-column">
                   <section class="main-footer-social">
                       <h2 class="visually-hidden">Социальные сети</h2>
                       <ul class="main-footer-social-list">
-                          <li>
-                              <a href="#">
+                          <li class="social-item">
+                              <a class="social-icon" href="#">
                                   <span class="visually-hidden">ВКонтакте</span>
                                   <img src="img/vk-icon.svg" width="26" height="15" alt="Логотип ВКонтакте">
                               </a>
                           </li>
-                          <li>
-                              <a href="#">
+                          <li class="social-item">
+                              <a class="social-icon" href="#">
                                   <span class="visually-hidden">Фейсбук</span>
                                   <img src="img/fb-icon.svg" width="12" height="22" alt="Логотип Facebook">
                               </a>
                           </li>
-                          <li>
-                              <a href="#">
+                          <li class="social-item">
+                              <a class="social-icon" href="#">
                                   <span class="visually-hidden">Инстаграм</span>
                                   <img src="img/insta-icon.svg" width="21" height="21" alt="Логотип Instagram">
                               </a>
